@@ -1,0 +1,206 @@
+GIT COMMANDS – BASIC TO ADVANCED
+
+1) git init
+Use: Initialize a new Git repository in the current directory.
+Example:
+git init
+
+2) git status
+Use: Show the current state of working directory and staging area.
+Example:
+git status
+
+3) git add .
+Use: Add all modified and new files to the staging area.
+Example:
+git add .
+
+4) git commit -m "message"
+Use: Save staged changes to the repository with a message.
+Example:
+git commit -m "Initial commit"
+
+5) git log
+Use: Show full commit history with author, date, and commit hash.
+Example:
+git log
+
+6) git log --oneline
+Use: Show commit history in a short, single-line format.
+Example:
+git log --oneline
+
+7) git show <commit-id>
+Use: Show details and changes of a specific commit.
+Example:
+git show a1b2c3d
+
+
+REMOTE REPOSITORY
+
+
+8) git remote add origin <repo-url>
+Use: Connect local repository to a remote GitHub repository.
+Example:
+git remote add origin https://github.com/user/repo.git
+
+9) git remote -v
+Use: Show remote repository URLs.
+Example:
+git remote -v
+
+10) git push -u origin main
+Use: Push code to GitHub and set upstream for future pushes.
+Example:
+git push -u origin main
+
+11) git push
+Use: Push commits to the default remote branch.
+Example:
+git push
+
+12) git pull
+Use: Fetch and merge changes from remote repository.
+Example:
+git pull origin main
+
+
+BRANCHING
+
+
+13) git branch
+Use: List all branches in the repository.
+Example:
+git branch
+
+14) git branch <branch-name>
+Use: Create a new branch.
+Example:
+git branch feature-login
+
+15) git checkout <branch-name>
+Use: Switch to another branch.
+Example:
+git checkout feature-login
+
+16) git checkout -b <branch-name>
+Use: Create and switch to a new branch at the same time.
+Example:
+git checkout -b dev
+
+17) git merge <branch-name>
+Use: Merge another branch into the current branch.
+Example:
+git merge feature-login
+MERGE CONFLICT
+
+
+18) git conflict
+Use: Happens when Git cannot auto-merge changes.
+Solution:
+- Open conflicted file
+- Fix conflicts manually
+- Run:
+git add .
+git commit -m "Resolved merge conflict"
+
+
+STASH
+
+19) git stash
+Use: Temporarily save uncommitted changes.
+Example:
+git stash
+
+20) git stash list
+Use: Show all saved stashes.
+Example:
+git stash list
+
+21) git stash apply stash@{0}
+Use: Apply a specific stash without deleting it.
+Example:
+git stash apply stash@{0}
+
+22) git stash pop
+Use: Apply the latest stash and remove it from stash list.
+Example:
+git stash pop
+
+
+RESET & REVERT
+
+23) git reset <commit-id>
+Use: Move HEAD to a previous commit (soft reset).
+Example:
+git reset a1b2c3d
+
+24) git reset --hard <commit-id>
+Use: Completely reset code and history (DANGEROUS).
+Example:
+git reset --hard a1b2c3d
+
+25) git revert <commit-id>
+Use: Undo a commit safely by creating a new commit.
+Example:
+git revert a1b2c3d
+REBASE
+
+26) git rebase <branch-name>
+Use: Reapply commits on top of another branch for clean history.
+Example:
+git rebase main
+
+
+DIFF & INSPECTION
+
+27) git diff
+Use: Show changes between working directory and staging area.
+Example:
+git diff
+
+28) git diff --staged
+Use: Show changes that are staged.
+Example:
+git diff --staged
+
+
+IGNORE FILES
+
+
+29) .gitignore
+Use: Ignore files/folders from being tracked by Git.
+Example (.gitignore file):
+node_modules/
+.env
+*.log
+
+
+git config commamds
+
+30) git config --global user.name "Your Name"
+Use: Set Git username.
+Example:
+git config --global user.name "Lucky"
+
+31) git config --global user.email "you@email.com"
+Use: Set Git email.
+Example:
+git config --global user.email "lucky@email.com"
+
+32) git clone <repo-url>
+Use: Copy a remote repository to local machine.
+Example:
+git clone https://github.com/user/repo.git
+
+33) git fetch
+Use: Download changes without merging.
+Example:
+git fetch
+
+34) git clean -f
+Use: Remove untracked files (DANGEROUS).
+Example:
+git clean -f
+
+
