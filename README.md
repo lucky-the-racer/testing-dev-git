@@ -84,13 +84,13 @@ The file `commands.txt` includes:
 Clone the repo:
 bash
 
-git clone<repository-url>
+git clone "repo link"
 
 
 
 Switch between branches:
-git checkout feature-branch
-git checkout integration
+git checkout feature-branch,
+git checkout integration,
 git checkout main
 
 Review commit history:
