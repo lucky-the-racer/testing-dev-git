@@ -2,18 +2,13 @@ GIT COMMANDS – BASIC TO ADVANCED
 
 1) git init
 Use: Initialize a new Git repository in the current directory.
-Example:
-git init
+
 
 2) git status
 Use: Show the current state of working directory and staging area.
-Example:
-git status
 
 3) git add .
 Use: Add all modified and new files to the staging area.
-Example:
-git add .
 
 4) git commit -m "message"
 Use: Save staged changes to the repository with a message.
@@ -22,13 +17,9 @@ git commit -m "Initial commit"
 
 5) git log
 Use: Show full commit history with author, date, and commit hash.
-Example:
-git log
 
 6) git log --oneline
 Use: Show commit history in a short, single-line format.
-Example:
-git log --oneline
 
 7) git show <commit-id>
 Use: Show details and changes of a specific commit.
@@ -46,18 +37,12 @@ git remote add origin https://github.com/user/repo.git
 
 9) git remote -v
 Use: Show remote repository URLs.
-Example:
-git remote -v
 
 10) git push -u origin main
 Use: Push code to GitHub and set upstream for future pushes.
-Example:
-git push -u origin main
 
 11) git push
 Use: Push commits to the default remote branch.
-Example:
-git push
 
 12) git pull
 Use: Fetch and merge changes from remote repository.
@@ -70,8 +55,6 @@ BRANCHING
 
 13) git branch
 Use: List all branches in the repository.
-Example:
-git branch
 
 14) git branch <branch-name>
 Use: Create a new branch.
@@ -109,13 +92,9 @@ STASH
 
 19) git stash
 Use: Temporarily save uncommitted changes.
-Example:
-git stash
 
 20) git stash list
 Use: Show all saved stashes.
-Example:
-git stash list
 
 21) git stash apply stash@{0}
 Use: Apply a specific stash without deleting it.
@@ -160,10 +139,7 @@ Example:
 git diff
 
 28) git diff --staged
-Use: Show changes that are staged.
-Example:
-git diff --staged
-
+Use: Show changes that are staged
 
 IGNORE FILES
 
